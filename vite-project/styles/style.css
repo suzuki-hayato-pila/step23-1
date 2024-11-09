@@ -186,3 +186,40 @@ h1 {
 .error-message {
   color: #ff4a4a;
 }
+
+/* Add these new styles to your existing CSS */
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pokemon-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.pokemon-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.pokemon-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
